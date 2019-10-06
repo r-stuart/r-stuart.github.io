@@ -5,26 +5,33 @@ title: Reading List
 <h1 style>Reading list:</h1>
 
 Java:
-
 <ul>
-  <li>Effective Java by Joshua Bloch</li>
-  <li>Clean Code by Robert C Martin</li>
+  {% assign javabooks = site.books | where: "language", "Java" %}
+  {% for book in javabooks %}
+  <li>{{ book.name }} by {{ book.author }}</li>
+  {% endfor %}
 </ul>
 
 Scala:
-
 <ul>
-  <li>Functional Programming in Scala by Paul Chiusano & Rúnar Bjarnason</li>
+  {% assign scalabooks = site.books | where: "language", "Scala" %}
+  {% for book in scalabooks %}
+  <li>{{ book.name }} by {{ book.author }}</li>
+  {% endfor %}
 </ul>
 
 Haskell:
-
 <ul>
-  <li>Learn You a Haskell for Great Good! by Miran Lipovaca</li>
+  {% assign haskellbooks = site.books | where: "language", "Haskell" %}
+  {% for book in haskellbooks %}
+  <li>{{ book.name }} by {{ book.author }}</li>
+  {% endfor %}
 </ul>
 
 Clojure:
-
 <ul>
-  <li>Clojure for the Brave and True by Daniel Higginbotham</li>
+  {% assign clojurebooks = site.books | where: "language", "Clojure" %}
+  {% for book in clojurebooks %}
+  <li>{{ book.name }} by {{ book.author }}</li>
+  {% endfor %}
 </ul>
