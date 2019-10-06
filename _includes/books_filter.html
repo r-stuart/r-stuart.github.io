@@ -1,0 +1,8 @@
+{{ include.language }}:
+<ul>
+  {% for book in include.collection %}
+  {% if book.language == include.language %}
+  <li>{{ book.name }} by {{ book.author }}</li>
+  {% endif %}
+  {% endfor %}
+</ul>

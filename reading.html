@@ -4,34 +4,8 @@ title: Reading List
 ---
 <h1 style>Reading list:</h1>
 
-Java:
-<ul>
-  {% assign javabooks = site.books | where: "language", "Java" %}
-  {% for book in javabooks %}
-  <li>{{ book.name }} by {{ book.author }}</li>
-  {% endfor %}
-</ul>
+{% assign langs = site.books | map: 'language' | join: ',' | join: ',' | split: ',' | uniq | sort %}
 
-Scala:
-<ul>
-  {% assign scalabooks = site.books | where: "language", "Scala" %}
-  {% for book in scalabooks %}
-  <li>{{ book.name }} by {{ book.author }}</li>
-  {% endfor %}
-</ul>
-
-Haskell:
-<ul>
-  {% assign haskellbooks = site.books | where: "language", "Haskell" %}
-  {% for book in haskellbooks %}
-  <li>{{ book.name }} by {{ book.author }}</li>
-  {% endfor %}
-</ul>
-
-Clojure:
-<ul>
-  {% assign clojurebooks = site.books | where: "language", "Clojure" %}
-  {% for book in clojurebooks %}
-  <li>{{ book.name }} by {{ book.author }}</li>
-  {% endfor %}
-</ul>
+{% for lang in langs %}
+{% include books_filter.html language=lang collection=site.books %}
+{% endfor %}
