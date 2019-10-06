@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"body {\n  background-color:  rgb(0, 0, 53);\n  color: white;\n}\n.outer {\n  display: table;\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 100%;\n  width: 100%;\n}\n\n.middle {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.inner {\n  margin-left: auto;\n  margin-right: auto;\n  width: 400px;\n  /*whatever width you want*/\n}\n\n.center {\n  text-align: center;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,CAAC,EACH,gBAAgB,EAAG,OAAa,EAChC,KAAK,EAAE,KAAK,GACb;;AACD,AAAA,MAAM,CAAC,EACL,OAAO,EAAE,KAAK,EACd,QAAQ,EAAE,QAAQ,EAClB,GAAG,EAAE,CAAC,EACN,IAAI,EAAE,CAAC,EACP,MAAM,EAAE,IAAI,EACZ,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,OAAO,CAAC,EACN,OAAO,EAAE,UAAU,EACnB,cAAc,EAAE,MAAM,GACvB;;AAED,AAAA,MAAM,CAAC,EACL,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,IAAI,EAClB,KAAK,EAAE,KAAK,EACZ,2BAA2B,EAC5B;;AAED,AAAA,OAAO,CAAC,EACN,UAAU,EAAE,MAAM,GACnB"
+}
