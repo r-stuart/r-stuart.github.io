@@ -1,0 +1,8 @@
+{{ include.type }}:
+<ul>
+  {% for book in include.collection %}
+  {% if book.type == include.type %}
+  <li>{{ book.name }} by {{ book.author }}</li>
+  {% endif %}
+  {% endfor %}
+</ul>

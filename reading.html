@@ -2,10 +2,31 @@
 layout: default
 title: Reading List
 ---
-<h1 style>Reading list:</h1>
-
-{% assign langs = site.books | map: 'language' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+<h1>Reading list:</h1>
+<h2>Programming:</h2>
+{% assign langs = site.books
+  | where: "type", "Programming"
+  | map: 'language'
+  | join: ','
+  | split: ','
+  | uniq
+  | sort %}
 
 {% for lang in langs %}
-{% include books_filter.html language=lang collection=site.books %}
+{% include books_filter_language.html language=lang collection=site.books %}
+{% endfor %}
+
+<!-- Find books we haven't already found, and display them: -->
+<h2>Other:</h2>
+{% assign types = site.books
+  | map: 'type'
+  | join: ','
+  | split: ','
+  | uniq
+  | sort %}
+
+{% for type in types %}
+{% if type != "Programming" %}
+{% include books_filter_type.html type=type collection=site.books %}
+{% endif %}
 {% endfor %}
