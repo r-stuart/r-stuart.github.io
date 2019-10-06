@@ -1,2 +1,5 @@
 collections:
   books:
+
+plugins:
+  - jekyll-octicons

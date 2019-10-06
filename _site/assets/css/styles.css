@@ -1,11 +1,33 @@
-body { background-color: #000035; color: white; }
+body {
+  background-color: #000035;
+  color: white; }
 
-.outer { display: table; position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
 
-.middle { display: table-cell; vertical-align: middle; }
+.middle {
+  display: table-cell;
+  vertical-align: middle; }
 
-.inner { margin-left: auto; margin-right: auto; width: 400px; /*whatever width you want*/ }
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /*whatever width you want*/ }
 
-.center { text-align: center; }
+.center {
+  text-align: center; }
 
-/*# sourceMappingURL=styles.css.map */
+.octicon-mark-github {
+  color: white; }
+
+.octicon-mail {
+  color: white; }
+
+svg {
+  fill: currentColor; }
