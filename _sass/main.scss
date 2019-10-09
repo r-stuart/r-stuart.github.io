@@ -7,6 +7,12 @@ img {
   display: block;
   max-width: 100%;
 }
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
 .filter {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
