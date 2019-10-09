@@ -2,6 +2,16 @@ body {
   background-color:  rgb(0, 0, 53);
   color: white;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.filter {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
 .outer {
   display: table;
   position: absolute;
@@ -19,7 +29,7 @@ body {
 .inner {
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
+  width: 50vw;
   /*whatever width you want*/
 }
 
